@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { updateString } from '../reducers/actions.js';
@@ -25,9 +26,9 @@ class App extends React.Component {
   }
 }
 App.propTypes = {
-  children: React.PropTypes.node,
-  aString: React.PropTypes.string,
-  updateString: React.PropTypes.any,
+  children: PropTypes.node,
+  aString: PropTypes.string,
+  updateString: PropTypes.any,
 };
 
 const mapStateToProps = (state) => {
